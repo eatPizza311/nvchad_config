@@ -52,6 +52,13 @@
        require("core.utils").load_mappings("crates")
      end,
    },
+   {
+     "theHamsta/nvim-dap-virtual-text",
+     lazy = false,
+     config = function(_, opts)
+       require("nvim-dap-virtual-text").setup()
+     end,
+   },
 }
 
  return plugins
