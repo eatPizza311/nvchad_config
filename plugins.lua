@@ -7,6 +7,7 @@ local plugins = {
       ensure_installed = {
         "rust-analyzer",
         "codelldb",
+        "pyright",
       },
     },
   },
