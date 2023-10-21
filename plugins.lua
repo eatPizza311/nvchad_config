@@ -8,6 +8,8 @@ local plugins = {
         "rust-analyzer",
         "codelldb",
         "pyright",
+        "mypy",
+        "ruff",
       },
     },
   },
@@ -27,6 +29,13 @@ local plugins = {
     end,
     config = function(_, opts)
       require('rust-tools').setup(opts)
+    end,
+  },
+  {
+    "nvimtools/none-ls.nvim",
+    ft = { "python" },
+    opts = function ()
+      return require "custom.configs.none-ls"
     end,
   },
   {
